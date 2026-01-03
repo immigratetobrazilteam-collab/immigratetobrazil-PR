@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F0FFF0;
+    color: #006400;
+}
+
+h1, h2 {
+    font-family: Eco, serif;
+    color: #228B22;
+}
+
+a {
+    color: #00FF00;
+}
+
+section {
+    padding: 3rem;
+}
