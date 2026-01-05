@@ -1,15 +1,52 @@
-<nav class="mobile-nav" aria-label="Mobile navigation">
-    <button aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <ul id="mobile-menu" hidden>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/services/artistic-visa">Artistic Visa</a></li>
-        <li><a href="/pr">Explore Paraná</a></li>
+<nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+    <button aria-expanded="false" aria-controls="mobile-menu" class="w-full px-4 py-2 bg-[#228B22] text-white rounded flex justify-between items-center">Menu <i class="fas fa-chevron-down"></i></button>
+    <ul id="mobile-menu" class="hidden flex flex-col bg-white shadow-md rounded-md mt-1 overflow-auto max-h-[80vh]">
+        <li><a href="/" class="block px-4 py-2 hover:bg-[#00FF00]/10">Home</a></li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#00FF00]/10 flex justify-between items-center" aria-expanded="false" aria-controls="services-sub">Services <i class="fas fa-chevron-down"></i></button>
+            <ul id="services-sub" class="hidden pl-4">
+                <li class="font-bold py-1">Travel Services</li>
+                
+                <li class="font-bold py-1 mt-2">Brazilian Visas</li>
+                <li><a href="/visas/artistic-visa" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Artistic Visa">Artistic Visa</a></li>
+                <li class="font-bold py-1 mt-2">Residency Permits</li>
+                
+                <li class="font-bold py-1 mt-2">Citizenship & Naturalisation</li>
+                
+                <li class="font-bold py-1 mt-2">Other Services</li>
+                
+            </ul>
+        </li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#00FF00]/10 flex justify-between items-center" aria-expanded="false" aria-controls="explore-sub">Explore Paraná <i class="fas fa-chevron-down"></i></button>
+            <ul id="explore-sub" class="hidden pl-4">
+                <li><a href="/explore/national-park-of-iguaçu" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="National Park of Iguaçu">National Park of Iguaçu</a></li><li><a href="/explore/itaipu-hydroelectric-dam" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Itaipu Hydroelectric Dam">Itaipu Hydroelectric Dam</a></li><li><a href="/explore/araucaria-forest" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="araucaria forest">araucaria forest</a></li><li><a href="/explore/paraná-river" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Paraná River">Paraná River</a></li><li><a href="/explore/tropic-of-capricorn" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Tropic of Capricorn">Tropic of Capricorn</a></li><li><a href="/explore/serra-do-mar" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Serra do Mar">Serra do Mar</a></li><li><a href="/explore/guaíra-falls" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="Guaíra Falls">Guaíra Falls</a></li><li><a href="/explore/national-park-of-iguaçu" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="National Park of Iguaçu">National Park of Iguaçu</a></li><li><a href="/explore/soybeans" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="soybeans">soybeans</a></li><li><a href="/explore/maize" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="maize">maize</a></li><li><a href="/explore/wheat" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="wheat">wheat</a></li><li><a href="/explore/sugarcane" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="sugarcane">sugarcane</a></li><li><a href="/explore/cassava" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="cassava">cassava</a></li><li><a href="/explore/beans" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="beans">beans</a></li><li><a href="/explore/tomato" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="tomato">tomato</a></li><li><a href="/explore/orange" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="orange">orange</a></li><li><a href="/explore/yerba-mate" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="yerba mate">yerba mate</a></li><li><a href="/explore/coffee" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="coffee">coffee</a></li><li><a href="/explore/oat" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="oat">oat</a></li><li><a href="/explore/barley" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="barley">barley</a></li><li><a href="/explore/peach" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="peach">peach</a></li><li><a href="/explore/tangerine" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="tangerine">tangerine</a></li><li><a href="/explore/strawberry" class="block py-2 pl-4 hover:bg-[#00FF00]/10" title="strawberry">strawberry</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact" class="block px-4 py-2 hover:bg-[#00FF00]/10">Contact</a></li>
+        <li><a href="/faq" class="block px-4 py-2 hover:bg-[#00FF00]/10">FAQ</a></li>
+        <li><a href="/blog" class="block px-4 py-2 hover:bg-[#00FF00]/10">Blog</a></li>
+        <li><a href="/about" class="block px-4 py-2 hover:bg-[#00FF00]/10">About</a></li>
     </ul>
     <script>
-    document.querySelector('.mobile-nav button').addEventListener('click', function() {
-        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-        document.getElementById('mobile-menu').hidden = !document.getElementById('mobile-menu').hidden;
-    });
+        const menuBtn = document.querySelector('.mobile-nav button');
+        const menu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-down');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        document.querySelectorAll('.mobile-nav li button').forEach(subBtn => {
+            subBtn.addEventListener('click', () => {
+                const expanded = subBtn.getAttribute('aria-expanded') === 'true';
+                subBtn.setAttribute('aria-expanded', !expanded);
+                const subMenu = document.getElementById(subBtn.getAttribute('aria-controls'));
+                subMenu.classList.toggle('hidden');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-down');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-up');
+            });
+        });
     </script>
 </nav>
